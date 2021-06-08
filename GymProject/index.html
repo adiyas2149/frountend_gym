@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fithub.com</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        font-family: 'Righteous', cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        background-image: url("background.jpg");
+    }
+
+    .left {
+        position: absolute;
+        display: inline-block;
+        left: 34px;
+        top: 20px;
+    }
+
+    .mid {
+        display: block;
+        width: 37%;
+        margin: 20px auto;
+
+    }
+
+    .right {
+        position: absolute;
+        display: inline-block;
+        right: 34px;
+        top: 20px;
+
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        font-size: 25px;
+        font-weight: 200;
+        color: black;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(250, 118, 10);
+    }
+
+    .left img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .btn {
+        font-family: 'Righteous', cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        margin: 10px 10px;
+        color: black;
+        background-color: transparent;
+        font-size: 20px;
+        text-emphasis-style: bold;
+        padding: 8px 23px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        background-color: rgb(176, 207, 204);
+    }
+
+    .container {
+        /* border: 6px solid black; */
+        margin: 88px 1088px;
+        padding: 18px 130px;
+        width: 25%;
+        border-radius: 32px;
+    }
+
+    .form-group input {
+        font-family: 'Righteous', cursive, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        text-align: center;
+        display: block;
+        width: 500px;
+        padding: 12px;
+        border: 8px solid rgb(255, 255, 255);
+        margin: 18px auto;
+        font-size: inherit;
+        border-radius: 12px;
+        background-color: transparent;
+
+    }
+
+    h1 {
+        text-align: right;
+
+    }
+
+    .container button {
+        display: block;
+        margin: 22px 88px;
+        text-align: center;
+
+        width: 90%;
+        color: rgb(0, 0, 0);
+        font-size: 34px;
+    }
+</style>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="">
+        </div>
+        <!-- middle box for navigatjon bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Food Item</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for search menu -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Free Customised Diet</h1>
+        <form action="noaction.py">
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Height">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your Weight">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter Your contact">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
